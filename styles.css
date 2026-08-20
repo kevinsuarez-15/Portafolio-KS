@@ -244,3 +244,23 @@ section h2 {
     border: 5px solid #0b2342;
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
 }
+/* ===== HABILIDADES ===== */
+
+.habilidades-container {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 30px;
+}
+
+.habilidad {
+    background-color: #e8f1fc;
+    border-left: 5px solid #0b2342;
+    padding: 18px 20px;
+    border-radius: 10px;
+    box-shadow: 0 5px 12px rgba(0, 0, 0, 0.08);
+}
+
+.habilidad p {
+    margin: 0;
+}
