@@ -232,3 +232,15 @@ section h2 {
         width: 220px;
     }
 }
+/* ===== IMAGEN DE PERFIL ===== */
+
+.perfil-img {
+    display: block;
+    width: 240px;
+    height: 240px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin: 30px auto 0;
+    border: 5px solid #0b2342;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
