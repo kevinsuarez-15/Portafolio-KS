@@ -1,0 +1,234 @@
+/* ===== CONFIGURACIÓN GENERAL ===== */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #222;
+}/* ===== ENCABEZADO Y MENÚ ===== */
+
+header {
+    background-color: #0B1F3A;
+    padding: 20px;
+    text-align: center;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #3DA9FC;
+}
+
+
+/* ===== SECCIÓN INICIO ===== */
+
+#inicio {
+    text-align: center;
+    padding: 80px 20px;
+    background-color: #EAF4FF;
+}
+
+#inicio h1 {
+    font-size: 42px;
+    margin-bottom: 15px;
+}
+
+#inicio p {
+    font-size: 18px;
+    margin: 8px;
+}
+
+
+/* ===== SECCIONES ===== */
+
+section {
+    padding: 60px 20px;
+    max-width: 1000px;
+    margin: auto;
+}
+
+section h2 {
+    text-align: center;
+    font-size: 32px;
+    margin-bottom: 30px;
+}
+/* ===== HABILIDADES ===== */
+
+#habilidades {
+    background-color: white;
+}
+
+#habilidades p {
+    background-color: #EAF4FF;
+    padding: 20px;
+    margin: 15px 0;
+    border-left: 5px solid #0B1F3A;
+    border-radius: 8px;
+    transition: 0.3s;
+}
+
+#habilidades p:hover {
+    transform: translateX(8px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
+}
+/* ===== PROYECTOS ===== */
+
+#proyectos {
+    background-color: #EAF4FF;
+}
+
+#proyectos article {
+    background-color: white;
+    padding: 25px;
+    margin: 20px 0;
+    border-radius: 10px;
+    border-top: 5px solid #0B1F3A;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: 0.3s;
+}
+
+#proyectos article:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.18);
+}
+
+#proyectos h3 {
+    color: #0B1F3A;
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+#proyectos p {
+    color: #333;
+    margin: 0;
+}
+/* ===== SOBRE MÍ ===== */
+
+#sobre-mi {
+    background-color: white;
+}
+
+#sobre-mi p {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 25px;
+    background-color: #EAF4FF;
+    border-radius: 10px;
+    border-left: 5px solid #0B1F3A;
+    font-size: 18px;
+    line-height: 1.8;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+}
+/* ===== CONTACTO ===== */
+
+#contacto {
+    background-color: white;
+    text-align: center;
+}
+
+#contacto > p {
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+.contacto-links {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.contacto-links a {
+    background-color: #0B1F3A;
+    color: white;
+    text-decoration: none;
+    padding: 14px 25px;
+    border-radius: 8px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.contacto-links a:hover {
+    background-color: #3DA9FC;
+    transform: translateY(-3px);
+}
+/* ===== DISEÑO RESPONSIVE ===== */
+
+@media (max-width: 768px) {
+
+    /* Menú */
+    header {
+        padding: 15px 10px;
+    }
+
+    nav {
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    nav a {
+        margin: 0;
+    }
+
+    /* Inicio */
+    #inicio {
+        padding: 60px 15px;
+    }
+
+    #inicio h1 {
+        font-size: 32px;
+    }
+
+    #inicio p {
+        font-size: 16px;
+    }
+
+    /* Secciones */
+    section {
+        padding: 50px 15px;
+    }
+
+    section h2 {
+        font-size: 28px;
+    }
+
+    /* Habilidades */
+    #habilidades p {
+        padding: 18px;
+    }
+
+    /* Proyectos */
+    #proyectos article {
+        padding: 20px;
+    }
+
+    /* Contacto */
+    #contacto > p {
+        font-size: 16px;
+    }
+
+    .contacto-links {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contacto-links a {
+        width: 220px;
+    }
+}
