@@ -69,45 +69,57 @@
 <section id="proyectos">
     <h2>Proyectos</h2>
 
-    <article>
-        <h3>Implementación de infraestructura de red</h3>
-        <p>
-            Diseño e implementación de una estructura de red utilizando
-            Fortinet, Cisco, Aruba y fibra óptica.
-        </p>
-    </article>
+    <div class="proyectos-container">
 
-    <article>
-        <h3>Monitoreo de infraestructura</h3>
-        <p>
-            Implementación de monitoreo utilizando Zabbix para supervisar
-            equipos y servicios de red.
-        </p>
-    </article>
+        <article class="proyecto">
+            <h3>Implementación de infraestructura de red</h3>
+            <p>
+                Diseño e implementación de una estructura de red utilizando
+                Fortinet, Cisco, Aruba y fibra óptica.
+            </p>
+        </article>
 
-    <article>
-        <h3>Administración de sistemas</h3>
-        <p>
-            Experiencia trabajando con servidores, virtualización,
-            Microsoft 365 y herramientas de administración de infraestructura.
+        <article class="proyecto">
+            <h3>Monitoreo de infraestructura</h3>
+            <p>
+                Implementación de monitoreo utilizando Zabbix para supervisar
+                equipos y servicios de red.
+            </p>
+        </article>
+
+        <article class="proyecto">
+            <h3>Administración de sistemas</h3>
+            <p>
+                Experiencia trabajando con servidores, virtualización,
+                Microsoft 365 y herramientas de administración de infraestructura.
+            </p>
+        </article>
+
         </p>
     </article>
   <section id="contacto">
     <h2>Contacto</h2>
 
-    <p>Si quieres ponerte en contacto conmigo, puedes hacerlo a través de:</p>
+    <p>
+        Si quieres ponerte en contacto conmigo, puedes hacerlo a través del
+        siguiente formulario:
+    </p>
 
-    <div class="contacto-links">
+    <form class="formulario-contacto">
 
-        <a href="mailto:kevinsuarez0117@gmail.com">
-            📧 Enviar correo
-        </a>
+        <label for="nombre">Nombre</label>
+        <input type="text" id="nombre" name="nombre" placeholder="Escribe tu nombre">
 
-        <a href="https://www.linkedin.com/in/kevinsuarez-ti/" target="_blank">
-            💼 Ver LinkedIn
-        </a>
+        <label for="correo">Correo electrónico</label>
+        <input type="email" id="correo" name="correo" placeholder="Escribe tu correo">
 
-    </div>
+        <label for="mensaje">Mensaje</label>
+        <textarea id="mensaje" name="mensaje" rows="5"
+            placeholder="Escribe tu mensaje"></textarea>
+
+        <button type="submit">Enviar mensaje</button>
+
+    </form>
 </section>
 
 </body>
