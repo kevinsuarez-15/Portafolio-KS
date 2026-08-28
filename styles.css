@@ -1,4 +1,6 @@
-/* ===== CONFIGURACIÓN GENERAL ===== */
+/* =========================================================
+   CONFIGURACIÓN GENERAL
+========================================================= */
 
 * {
     box-sizing: border-box;
@@ -15,7 +17,12 @@ body {
     line-height: 1.6;
     background-color: #f4f4f4;
     color: #222;
-}/* ===== ENCABEZADO Y MENÚ ===== */
+}
+
+
+/* =========================================================
+   ENCABEZADO Y MENÚ
+========================================================= */
 
 header {
     background-color: #0B1F3A;
@@ -24,10 +31,11 @@ header {
 }
 
 nav a {
-    color: white;
+    color: #ffffff;
     text-decoration: none;
     margin: 0 15px;
     font-weight: bold;
+    transition: color 0.3s;
 }
 
 nav a:hover {
@@ -35,7 +43,30 @@ nav a:hover {
 }
 
 
-/* ===== SECCIÓN INICIO ===== */
+/* =========================================================
+   BOTÓN DE MODO OSCURO
+========================================================= */
+
+#botonTema {
+    margin-top: 10px;
+    padding: 8px 15px;
+    border: none;
+    border-radius: 8px;
+    background-color: #ffffff;
+    color: #0B2447;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#botonTema:hover {
+    transform: scale(1.05);
+}
+
+
+/* =========================================================
+   SECCIÓN INICIO
+========================================================= */
 
 #inicio {
     text-align: center;
@@ -54,7 +85,9 @@ nav a:hover {
 }
 
 
-/* ===== SECCIONES ===== */
+/* =========================================================
+   SECCIONES GENERALES
+========================================================= */
 
 section {
     padding: 60px 20px;
@@ -67,60 +100,30 @@ section h2 {
     font-size: 32px;
     margin-bottom: 30px;
 }
-/* ===== HABILIDADES ===== */
 
-#habilidades {
-    background-color: white;
+
+/* =========================================================
+   IMAGEN DE PERFIL
+========================================================= */
+
+.perfil-img {
+    display: block;
+    width: 240px;
+    height: 240px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin: 30px auto 0;
+    border: 5px solid #0B2342;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
 }
 
-#habilidades p {
-    background-color: #EAF4FF;
-    padding: 20px;
-    margin: 15px 0;
-    border-left: 5px solid #0B1F3A;
-    border-radius: 8px;
-    transition: 0.3s;
-}
 
-#habilidades p:hover {
-    transform: translateX(8px);
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
-}
-/* ===== PROYECTOS ===== */
-
-#proyectos {
-    background-color: #EAF4FF;
-}
-
-#proyectos article {
-    background-color: white;
-    padding: 25px;
-    margin: 20px 0;
-    border-radius: 10px;
-    border-top: 5px solid #0B1F3A;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    transition: 0.3s;
-}
-
-#proyectos article:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.18);
-}
-
-#proyectos h3 {
-    color: #0B1F3A;
-    font-size: 22px;
-    margin-bottom: 10px;
-}
-
-#proyectos p {
-    color: #333;
-    margin: 0;
-}
-/* ===== SOBRE MÍ ===== */
+/* =========================================================
+   SOBRE MÍ
+========================================================= */
 
 #sobre-mi {
-    background-color: white;
+    background-color: #ffffff;
 }
 
 #sobre-mi p {
@@ -134,10 +137,96 @@ section h2 {
     line-height: 1.8;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
 }
-/* ===== CONTACTO ===== */
+
+
+/* =========================================================
+   HABILIDADES
+========================================================= */
+
+#habilidades {
+    background-color: #ffffff;
+}
+
+.habilidades-container {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 30px;
+}
+
+.habilidad {
+    background-color: #EAF3FF;
+    color: #222222;
+    padding: 18px 20px;
+    border-left: 5px solid #0B2342;
+    border-radius: 10px;
+    box-shadow: 0 5px 12px rgba(0, 0, 0, 0.08);
+    transition: 0.3s;
+}
+
+.habilidad:hover {
+    transform: translateX(8px);
+    box-shadow: 0 8px 18px rgba(0, 0, 0, 0.15);
+}
+
+.habilidad p {
+    margin: 0;
+    padding: 0;
+    background: transparent;
+    border: none;
+    box-shadow: none;
+}
+
+
+/* =========================================================
+   PROYECTOS
+========================================================= */
+
+#proyectos {
+    background-color: #EAF4FF;
+}
+
+.proyectos-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    max-width: 900px;
+    margin: auto;
+}
+
+.proyecto {
+    background-color: #ffffff;
+    color: #222222;
+    padding: 25px;
+    border-left: 5px solid #0B2342;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+    transition: 0.3s;
+}
+
+.proyecto:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.18);
+}
+
+.proyecto h3 {
+    color: #0B1F3A;
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+.proyecto p {
+    color: #333333;
+    margin: 0;
+}
+
+
+/* =========================================================
+   CONTACTO
+========================================================= */
 
 #contacto {
-    background-color: white;
+    background-color: #ffffff;
     text-align: center;
 }
 
@@ -155,7 +244,7 @@ section h2 {
 
 .contacto-links a {
     background-color: #0B1F3A;
-    color: white;
+    color: #ffffff;
     text-decoration: none;
     padding: 14px 25px;
     border-radius: 8px;
@@ -167,11 +256,282 @@ section h2 {
     background-color: #3DA9FC;
     transform: translateY(-3px);
 }
-/* ===== DISEÑO RESPONSIVE ===== */
+
+
+/* =========================================================
+   FORMULARIO DE CONTACTO
+========================================================= */
+
+.formulario-contacto {
+    max-width: 600px;
+    margin: 30px auto;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.formulario-contacto input,
+.formulario-contacto textarea {
+    padding: 12px;
+    border: 1px solid #cccccc;
+    border-radius: 6px;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+}
+
+.formulario-contacto textarea {
+    min-height: 120px;
+    resize: vertical;
+}
+
+.formulario-contacto button {
+    margin-top: 10px;
+    padding: 12px;
+    background-color: #0B2342;
+    color: #ffffff;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.formulario-contacto button:hover {
+    background-color: #163D6B;
+}
+
+
+/* =========================================================
+   FOOTER
+========================================================= */
+
+footer {
+    background-color: #0B223F;
+    color: #ffffff;
+    text-align: center;
+    padding: 25px;
+    margin-top: 40px;
+}
+
+footer p {
+    color: #ffffff;
+    margin: 8px 0;
+}
+
+footer a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+
+/* =========================================================
+   =========================================================
+   MODO OSCURO
+   =========================================================
+========================================================= */
+
+body.modo-oscuro {
+    background-color: #111111;
+    color: #ffffff;
+}
+
+
+/* ---------- Header ---------- */
+
+body.modo-oscuro header {
+    background-color: #080808;
+}
+
+body.modo-oscuro nav a {
+    color: #ffffff;
+}
+
+body.modo-oscuro nav a:hover {
+    color: #4DA3FF;
+}
+
+
+/* ---------- Inicio ---------- */
+
+body.modo-oscuro #inicio {
+    background-color: #102A43;
+    color: #ffffff;
+}
+
+body.modo-oscuro #inicio h1,
+body.modo-oscuro #inicio p {
+    color: #ffffff;
+}
+
+
+/* ---------- Secciones ---------- */
+
+body.modo-oscuro section {
+    color: #ffffff;
+}
+
+
+/* ---------- Sobre mí ---------- */
+
+body.modo-oscuro #sobre-mi {
+    background-color: #1E1E1E;
+    color: #ffffff;
+}
+
+body.modo-oscuro #sobre-mi h2 {
+    color: #ffffff;
+}
+
+body.modo-oscuro #sobre-mi p {
+    background-color: #12345A;
+    color: #ffffff;
+    border-left-color: #0B4F8A;
+}
+
+
+/* ---------- Habilidades ---------- */
+
+body.modo-oscuro #habilidades {
+    background-color: #1E1E1E;
+    color: #ffffff;
+}
+
+body.modo-oscuro #habilidades h2 {
+    color: #ffffff;
+}
+
+body.modo-oscuro .habilidades-container {
+    background-color: transparent;
+}
+
+body.modo-oscuro .habilidad {
+    background-color: #12345A;
+    color: #ffffff;
+    border-left-color: #0B6EBD;
+}
+
+body.modo-oscuro .habilidad p {
+    background-color: transparent;
+    color: #ffffff;
+}
+
+
+/* ---------- Proyectos ---------- */
+
+body.modo-oscuro #proyectos {
+    background-color: #1E1E1E;
+    color: #ffffff;
+}
+
+body.modo-oscuro #proyectos h2 {
+    color: #ffffff;
+}
+
+body.modo-oscuro .proyectos-container {
+    background-color: transparent;
+}
+
+body.modo-oscuro .proyecto {
+    background-color: #12345A;
+    color: #ffffff;
+    border-left-color: #0B6EBD;
+}
+
+body.modo-oscuro .proyecto h3 {
+    color: #ffffff;
+}
+
+body.modo-oscuro .proyecto p {
+    color: #ffffff;
+}
+
+
+/* ---------- Contacto ---------- */
+
+body.modo-oscuro #contacto {
+    background-color: #1E1E1E;
+    color: #ffffff;
+}
+
+body.modo-oscuro #contacto h2,
+body.modo-oscuro #contacto p,
+body.modo-oscuro #contacto label {
+    color: #ffffff;
+}
+
+
+/* ---------- Formulario ---------- */
+
+body.modo-oscuro .formulario-contacto input,
+body.modo-oscuro .formulario-contacto textarea {
+    background-color: #333333;
+    color: #ffffff;
+    border: 1px solid #666666;
+}
+
+body.modo-oscuro .formulario-contacto input::placeholder,
+body.modo-oscuro .formulario-contacto textarea::placeholder {
+    color: #CCCCCC;
+}
+
+body.modo-oscuro .formulario-contacto button {
+    background-color: #0B4F8A;
+    color: #ffffff;
+}
+
+body.modo-oscuro .formulario-contacto button:hover {
+    background-color: #1769AA;
+}
+
+
+/* ---------- Enlaces ---------- */
+
+body.modo-oscuro a {
+    color: #ffffff;
+}
+
+
+/* ---------- Footer ---------- */
+
+body.modo-oscuro footer {
+    background-color: #080808;
+    color: #ffffff;
+}
+
+body.modo-oscuro footer p,
+body.modo-oscuro footer a {
+    color: #ffffff;
+}
+
+
+/* ---------- Botón de tema ---------- */
+
+body.modo-oscuro #botonTema {
+    background-color: #ffffff;
+    color: #0B2342;
+}
+
+
+/* ---------- Imagen de perfil ---------- */
+
+body.modo-oscuro .perfil-img {
+    border-color: #0B6EBD;
+}
+
+
+/* =========================================================
+   DISEÑO RESPONSIVE
+========================================================= */
 
 @media (max-width: 768px) {
 
-    /* Menú */
+    /* Header */
     header {
         padding: 15px 10px;
     }
@@ -186,6 +546,7 @@ section h2 {
         margin: 0;
     }
 
+
     /* Inicio */
     #inicio {
         padding: 60px 15px;
@@ -199,6 +560,7 @@ section h2 {
         font-size: 16px;
     }
 
+
     /* Secciones */
     section {
         padding: 50px 15px;
@@ -208,15 +570,32 @@ section h2 {
         font-size: 28px;
     }
 
+
+    /* Imagen */
+    .perfil-img {
+        width: 200px;
+        height: 200px;
+    }
+
+
+    /* Sobre mí */
+    #sobre-mi p {
+        padding: 20px;
+        font-size: 16px;
+    }
+
+
     /* Habilidades */
-    #habilidades p {
+    .habilidad {
         padding: 18px;
     }
 
+
     /* Proyectos */
-    #proyectos article {
+    .proyecto {
         padding: 20px;
     }
+
 
     /* Contacto */
     #contacto > p {
@@ -231,119 +610,10 @@ section h2 {
     .contacto-links a {
         width: 220px;
     }
-}
-/* ===== IMAGEN DE PERFIL ===== */
-
-.perfil-img {
-    display: block;
-    width: 240px;
-    height: 240px;
-    object-fit: cover;
-    border-radius: 50%;
-    margin: 30px auto 0;
-    border: 5px solid #0b2342;
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
-}
-/* ===== HABILIDADES ===== */
-
-.habilidades-container {
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
-    margin-top: 30px;
-}
-
-.habilidad {
-    background-color: #e8f1fc;
-    border-left: 5px solid #0b2342;
-    padding: 18px 20px;
-    border-radius: 10px;
-    box-shadow: 0 5px 12px rgba(0, 0, 0, 0.08);
-}
-
-.habilidad p {
-    margin: 0;
-}
-/* ===== PROYECTOS ===== */
-
-#proyectos {
-    padding: 60px 20px;
-}
-
-.proyectos-container {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-    max-width: 900px;
-    margin: auto;
-}
-
-.proyecto {
-    background-color: #eaf3ff;
-    padding: 25px;
-    border-left: 5px solid #0b2342;
-    border-radius: 10px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
-}
-
-.proyecto h3 {
-    margin-bottom: 10px;
-}
 
 
-/* ===== FORMULARIO DE CONTACTO ===== */
-
-.formulario-contacto {
-    max-width: 600px;
-    margin: 30px auto;
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-}
-
-.formulario-contacto input,
-.formulario-contacto textarea {
-    padding: 12px;
-    border: 1px solid #ccc;
-    border-radius: 6px;
-    font-family: Arial, sans-serif;
-    font-size: 16px;
-}
-
-.formulario-contacto button {
-    margin-top: 10px;
-    padding: 12px;
-    background-color: #0b2342;
-    color: white;
-    border: none;
-    border-radius: 6px;
-    font-size: 16px;
-    font-weight: bold;
-    cursor: pointer;
-}
-
-.formulario-contacto button:hover {
-    background-color: #163d6b;
-}
-footer {
-    background-color: #0b223f;
-    color: #ffffff;
-    text-align: center;
-    padding: 25px;
-    margin-top: 40px;
-}
-
-footer p {
-    color: #ffffff !important;
-    margin: 8px 0;
-}
-
-footer a {
-    color: #ffffff !important;
-    text-decoration: none;
-    font-weight: bold;
-}
-
-footer a:hover {
-    text-decoration: underline;
+    /* Formulario */
+    .formulario-contacto {
+        width: 100%;
+    }
 }
