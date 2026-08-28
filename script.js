@@ -1,21 +1,18 @@
 console.log("JavaScript conectado correctamente");
 
-// Evento click en los enlaces del menú
-const enlacesMenu = document.querySelectorAll("header a");
+// Elementos del DOM
+const botonInfo = document.getElementById("botonInfo");
+const informacionExtra = document.getElementById("informacionExtra");
 
-enlacesMenu.forEach(function(enlace) {
-    enlace.addEventListener("click", function() {
-        console.log("Se hizo clic en: " + enlace.textContent);
-    });
-});
+// Evento click
+botonInfo.addEventListener("click", function () {
 
-// Evento mouseover y mouseout en la imagen de perfil
-const imagenPerfil = document.querySelector('img[src="img/perfil.png"]');
+    if (informacionExtra.style.display === "none") {
+        informacionExtra.style.display = "block";
+        botonInfo.textContent = "Ocultar información";
+    } else {
+        informacionExtra.style.display = "none";
+        botonInfo.textContent = "Mostrar más información";
+    }
 
-imagenPerfil.addEventListener("mouseover", function() {
-    console.log("Mouse sobre la imagen de perfil");
-});
-
-imagenPerfil.addEventListener("mouseout", function() {
-    console.log("Mouse fuera de la imagen de perfil");
 });
